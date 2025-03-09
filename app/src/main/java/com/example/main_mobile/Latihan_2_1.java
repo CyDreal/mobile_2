@@ -11,7 +11,6 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.graphics.Insets;
 import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
-import androidx.recyclerview.widget.DefaultItemAnimator;
 import androidx.recyclerview.widget.GridLayoutManager;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
@@ -26,7 +25,7 @@ import retrofit2.Retrofit;
 import retrofit2.converter.gson.GsonConverterFactory;
 
 public class Latihan_2_1 extends AppCompatActivity {
-    public static final String URL="https://8c81-149-108-63-53.ngrok-free.app/mobile_2_API/";
+    public static final String URL="https://73ee-149-108-63-53.ngrok-free.app/mobile_2_API/";
     private List<Latihan_2_1_DataProducts> results;
     private Latihan_2_1_Adapter adapter;
     RecyclerView recyclerView;

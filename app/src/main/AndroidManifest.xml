@@ -18,7 +18,8 @@
         tools:targetApi="31">
         <activity
             android:name=".Latihan_2_1"
-            android:exported="true" />
+            android:exported="true"
+            android:theme="@style/NoActionBar"/>
         <activity
             android:name=".Praktikum_2_2_Main_Home"
             android:exported="false"

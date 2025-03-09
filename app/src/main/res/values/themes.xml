@@ -6,4 +6,5 @@
     </style>
 
     <style name="Theme.Main_mobile" parent="Base.Theme.Main_mobile" />
+    <style name="NoActionBar" parent="Theme.Material3.DayNight.NoActionBar" />
 </resources>
