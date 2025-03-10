@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/yellow"
+    android:isScrollContainer="true"
+    tools:context=".Praktikum_3_1_MainRegister">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/conLyout_pra_3_1"
+        android:layout_width="0dp"
+        android:layout_height="180dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+        <ImageView
+            android:id="@+id/imgView_pra_3_1"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:scaleType="fitCenter"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+        <TextView
+            android:id="@+id/tv_pra_3_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="10dp"
+            android:text="Smart Picture"
+            android:textColor="@color/white"
+            android:textSize="34sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toEndOf="@id/imgView_pra_3_1"
+            app:layout_constraintTop_toTopOf="parent" />
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:gravity="right"
+            android:text="Display Solution Delivered"
+            android:textColor="@color/white"
+            android:textSize="16sp"
+            android:textStyle="bold|italic"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/imgView_pra_3_1"
+            app:layout_constraintTop_toBottomOf="@id/tv_pra_3_1"/>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <ScrollView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:fillViewport="true"
+        android:background="@drawable/rounded_background"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/conLyout_pra_3_1">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            tools:context=".RegisterActivity">
+
+            <!-- Judul Register -->
+            <TextView
+                android:id="@+id/tV3_pra_3_1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:gravity="center"
+                android:text="Register"
+                android:textColor="#ECD618"
+                android:textSize="34sp"
+                android:textStyle="bold"/>
+
+            <!-- Field Your Name -->
+            <TextView
+                android:id="@+id/tVName_pra_3_1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="40dp"
+                android:layout_marginTop="40dp"
+                android:text="Your Name"
+                android:textColor="#ECD618"
+                android:textSize="20sp"/>
+
+            <EditText
+                android:id="@+id/etName_pra_3_1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="40dp"
+                android:layout_marginRight="40dp"
+                android:ems="10"
+                android:hint="Enter your name"
+                android:textSize="20sp"/>
+
+            <!-- Field Email -->
+            <TextView
+                android:id="@+id/tVEmail_pra_3_1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="40dp"
+                android:layout_marginTop="40dp"
+                android:text="Email"
+                android:textColor="#ECD618"
+                android:textSize="20sp"/>
+
+            <EditText
+                android:id="@+id/etEmail_pra_3_1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="40dp"
+                android:layout_marginRight="40dp"
+                android:ems="10"
+                android:hint="example@gmail.com"
+                android:inputType="textEmailAddress"
+                android:textSize="20sp"/>
+
+            <!-- Field Password -->
+            <TextView
+                android:id="@+id/tVPassword_pra_3_1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="40dp"
+                android:layout_marginTop="40dp"
+                android:text="Password"
+                android:textColor="#ECD618"
+                android:textSize="20sp"/>
+
+            <EditText
+                android:id="@+id/etPassword_pra_3_1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="40dp"
+                android:layout_marginRight="40dp"
+                android:ems="10"
+                android:hint="********"
+                android:inputType="textPassword"
+                android:minHeight="48dp"/>
+
+            <!-- Tombol Submit -->
+            <ImageButton
+                android:id="@+id/imgbtnSubmit_pra_3_1"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_marginLeft="40dp"
+                android:layout_marginTop="40dp"
+                android:layout_marginRight="40dp"
+                android:background="@android:color/transparent"
+                android:scaleType="centerInside"
+
+                tools:ignore="SpeakableTextPresentCheck"/>
+
+            <!-- Link Back to Login -->
+            <TextView
+                android:id="@+id/tvToLogin_pra_3_1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="40dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="40dp"
+                android:gravity="center_horizontal"
+                android:text="Back to Login"
+                android:textColor="#ECD618"
+                android:textSize="20sp"
+                android:textStyle="italic"/>
+
+        </LinearLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

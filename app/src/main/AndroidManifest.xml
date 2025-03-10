@@ -17,9 +17,16 @@
         android:theme="@style/Theme.Main_mobile"
         tools:targetApi="31">
         <activity
-            android:name=".Latihan_2_1"
+            android:name=".Praktikum_3_1_MainRegister"
             android:exported="true"
             android:theme="@style/NoActionBar"/>
+        <activity
+            android:name=".Praktikum_3_1"
+            android:exported="true" />
+        <activity
+            android:name=".Latihan_2_1"
+            android:exported="true"
+            android:theme="@style/NoActionBar" />
         <activity
             android:name=".Praktikum_2_2_Main_Home"
             android:exported="false"
