@@ -38,6 +38,11 @@ ImageButton imgbtnSubmit;
         super.onCreate(savedInstanceState);
         EdgeToEdge.enable(this);
         setContentView(R.layout.activity_praktikum31_main_register);
+        ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main), (v, insets) -> {
+            Insets systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars());
+            v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
+            return insets;
+        });
         tvBack = findViewById(R.id.tvToLogin_pra_3_1);
         tvBack.setOnClickListener(new View.OnClickListener() {
             @Override
