@@ -17,11 +17,15 @@
         android:theme="@style/Theme.Main_mobile"
         tools:targetApi="31">
         <activity
+            android:name=".Praktikum_3_3_BottomNavigation"
+            android:exported="true"
+            android:label="@string/title_activity_praktikum33_bottom_navigation" />
+        <activity
             android:name=".Praktikum_3_2_EditProfile"
-            android:exported="false" />
+            android:exported="true" />
         <activity
             android:name=".Praktikum_3_2"
-            android:exported="false" />
+            android:exported="true" />
         <activity
             android:name=".Praktikum_3_1_MainRegister"
             android:exported="true"

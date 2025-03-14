@@ -102,7 +102,7 @@
                 android:layout_marginRight="40dp"
                 android:background="@android:color/transparent"
                 android:scaleType="centerInside"
-                app:srcCompat=""
+                app:srcCompat="@color/yellow"
                 tools:ignore="SpeakableTextPresentCheck"/>
             <TextView
                 android:id="@+id/tvProfile_pra_3_2Ep"

@@ -91,7 +91,7 @@
                     android:layout_marginLeft="10dp"
                     android:background="@android:color/transparent"
                     android:scaleType="fitCenter"
-                    app:srcCompat=""
+                    app:srcCompat="@color/yellow"
                     tools:ignore="SpeakableTextPresentCheck"/>
                 <ImageButton
                     android:id="@+id/imgBtnProduct_pra_3_2"
@@ -100,7 +100,7 @@
                     android:layout_marginLeft="20dp"
                     android:background="@android:color/transparent"
                     android:scaleType="fitCenter"
-                    app:srcCompat=""
+                    app:srcCompat="@color/yellow"
                     tools:ignore="SpeakableTextPresentCheck"/>
             </TableRow>
             <TableRow
@@ -150,7 +150,7 @@
                     android:layout_marginLeft="10dp"
                     android:background="@android:color/transparent"
                     android:scaleType="fitCenter"
-                    app:srcCompat=""
+                    app:srcCompat="@color/yellow"
                     tools:ignore="SpeakableTextPresentCheck"/>
             </TableRow>
             <TableRow
