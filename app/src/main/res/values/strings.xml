@@ -7,4 +7,6 @@
     <string name="title_dashboard">Dashboard</string>
     <string name="title_notifications">Notifications</string>
     <string name="title_product">Product</string>
+    <string name="title_appBar">Smart Phone Store</string>
+    <string name="subTitle_appBar">Best Solution For Yout Daily Driver</string>
 </resources>

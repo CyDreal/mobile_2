@@ -4,8 +4,6 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
-import android.widget.EditText;
-import android.widget.ImageButton;
 import android.widget.TextView;
 
 import androidx.activity.EdgeToEdge;
@@ -30,9 +28,10 @@ import retrofit2.Retrofit;
 import retrofit2.converter.gson.GsonConverterFactory;
 
 public class Praktikum_3_1_MainRegister extends AppCompatActivity {
-TextView tvBack;
-EditText etNama, etEmail, etPassword;
-ImageButton imgbtnSubmit;
+    TextView tvBack;
+    com.google.android.material.textfield.TextInputEditText etNama, etEmail, etPassword;
+    com.google.android.material.button.MaterialButton imgbtnSubmit;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -43,6 +42,7 @@ ImageButton imgbtnSubmit;
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
             return insets;
         });
+
         tvBack = findViewById(R.id.tvToLogin_pra_3_1);
         tvBack.setOnClickListener(new View.OnClickListener() {
             @Override

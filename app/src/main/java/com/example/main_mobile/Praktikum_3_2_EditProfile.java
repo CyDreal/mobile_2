@@ -1,10 +1,9 @@
 package com.example.main_mobile;
 
+import android.app.ProgressDialog;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
-import android.widget.EditText;
-import android.widget.ImageButton;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -30,9 +29,10 @@ import retrofit2.converter.gson.GsonConverterFactory;
 public class Praktikum_3_2_EditProfile extends AppCompatActivity {
 
     TextView tvWelcome, tvBack;
-    EditText etNama, etAlamat, etKota, etProvinsi, etTelp, etKodePos;
+    com.google.android.material.textfield.TextInputEditText etNama, etAlamat, etKota, etProvinsi, etTelp, etKodePos;
     String email;
-    ImageButton imgBtnSubmit;
+    com.google.android.material.button.MaterialButton imgBtnSubmit;
+    ProgressDialog pd;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -52,24 +52,41 @@ public class Praktikum_3_2_EditProfile extends AppCompatActivity {
         etTelp = findViewById(R.id.etProfileTelp_pra_3_2Ep);
         etKodePos = findViewById(R.id.etProfileKodePos_pra_3_2Ep);
 
+        imgBtnSubmit = findViewById(R.id.imgBtnProfileSubmit_pra_3_2Ep);
+
         tvWelcome = findViewById(R.id.tvWelcome_pra_3_2Ep);
         tvBack = findViewById(R.id.tvProfileBack_pra_3_2Ep);
 
-        tvWelcome.setText("Welcome = "+getIntent().getStringExtra("nama")+"("+getIntent().getStringExtra("email")+")");
-        tvBack.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                finish();
-            }
-        });
+        // Mengambil dan menampung email dari intent
         email = getIntent().getStringExtra("email");
-        getProfile(email);
+        String nama = getIntent().getStringExtra("nama");
+        tvWelcome.setText("Welcome = "+nama+" ( "+email+" ) ");
 
-        imgBtnSubmit = findViewById(R.id.imgBtnProfileSubmit_pra_3_2Ep);
+        // inisialisasi progress dialog
+        pd = new ProgressDialog(this);
+        pd.setMessage("Loading...");
+        pd.setCancelable(false);
+
+        // mendapatkan data profile menggunakan email
+        if (email != null && !email.isEmpty()){
+            getProfile(email);
+        }
+
+        tvBack.setOnClickListener(view -> finish());
+
+//        tvBack.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View view) {
+//                finish();
+//            }
+//        });
+
+
         imgBtnSubmit.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 Praktikum_3_2_DataPelanggan data = new Praktikum_3_2_DataPelanggan();
+                data.setEmail(email); // set the email
                 data.setNama(etNama.getText().toString());
                 data.setAlamat(etAlamat.getText().toString());
                 data.setKota(etKota.getText().toString());
@@ -83,42 +100,61 @@ public class Praktikum_3_2_EditProfile extends AppCompatActivity {
     }
 
     void getProfile(String vemail) {
+        pd.show();
+
         Praktikum_3_2_ServerAPI urlAPI = new Praktikum_3_2_ServerAPI();
         String URL = urlAPI.BASE_URL;
+
         Retrofit retrofit = new Retrofit.Builder()
                 .baseUrl(URL)
                 .addConverterFactory(GsonConverterFactory.create())
                 .build();
+
         Praktikum_3_2_RegisterAPI api = retrofit.create(Praktikum_3_2_RegisterAPI.class);
         api.getProfile(vemail).enqueue(new Callback<ResponseBody>() {
             @Override
             public void onResponse(Call<ResponseBody> call, Response<ResponseBody> response) {
+                pd.dismiss();
                 try {
-                    JSONObject json = new JSONObject(response.body().string());
-                    if (json.getString("result").toString().equals("1")) {
-                        etNama.setText(json.getString("nama").toString());
-                        etAlamat.setText(json.getString("alamat").toString());
-                        etKota.setText(json.getString("kota").toString());
-                        etProvinsi.setText(json.getString("provinsi").toString());
-                        etTelp.setText(json.getString("telp").toString());
-                        etKodePos.setText(json.getString("kodepos").toString());
+                    if (response.isSuccessful() && response.body() != null) {
+                        JSONObject json = new JSONObject(response.body().string());
+                        if (json.getString("result").equals("1")) {
+                            // mendapatkan object data terlebih dahulu
+                            JSONObject data = json.getJSONObject("data");
 
-                        Log.i("Info profile", json.getJSONObject("data").toString());
-                    } else {
+                            // akses values dari object data
+                            etNama.setText(data.getString("nama").toString());
+                            etAlamat.setText(data.getString("alamat").toString());
+                            etKota.setText(data.getString("kota").toString());
+                            etProvinsi.setText(data.getString("provinsi").toString());
+                            etTelp.setText(data.getString("telp").toString());
+                            etKodePos.setText(data.getString("kodepos").toString());
 
+                            Log.i("Info profile", "Data loaded successfully");
+                        } else {
+                            showError("Gagal untuk mendapatkan data profile");
+                        }
                     }
-                } catch (JSONException e) {
+                }  catch ( JSONException | IOException e) {
                     e.printStackTrace();
-                } catch (IOException e) {
-                    e.printStackTrace();
+                    showError("Gagal untuk meneruskan permintaan" + e.getMessage());
                 }
             }
 
             @Override
             public void onFailure(Call<ResponseBody> call, Throwable t) {
-                t.printStackTrace();
+                pd.dismiss();
+                showError("Network error: "+t.getMessage());
             }
         });
+    }
+
+    private void showError(String message) {
+        new AlertDialog.Builder(this)
+                .setTitle("Error")
+                .setMessage(message)
+                .setPositiveButton("OK", null)
+                .show();
     }
 
     void updateProfile(Praktikum_3_2_DataPelanggan data) {

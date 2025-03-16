@@ -15,7 +15,7 @@ import androidx.core.view.WindowInsetsCompat;
 public class Praktikum_3_2 extends AppCompatActivity {
 
     TextView tvWelcome;
-    ImageButton imgBtnLogout, imgBtnEditProfile;
+    com.google.android.material.card.MaterialCardView imgBtnLogout, imgBtnEditProfile, imgBtnProduct;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -29,8 +29,12 @@ public class Praktikum_3_2 extends AppCompatActivity {
             return insets;
         });
         tvWelcome = findViewById(R.id.tvWelcome_pra_3_2);
-        tvWelcome.setText("Welcome = "+getIntent().getStringExtra("nama")+"("+getIntent().getStringExtra("email")+")");
         imgBtnLogout = findViewById(R.id.imgBtnLogout_pra_3_2);
+        imgBtnEditProfile = findViewById(R.id.imgBtnEditProfile_pra_3_2);
+        imgBtnProduct = findViewById(R.id.imgBtnProduct_pra_3_2);
+
+        tvWelcome.setText("Welcome = "+getIntent().getStringExtra("nama")+"("+getIntent().getStringExtra("email")+")");
+
         imgBtnLogout.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -39,11 +43,20 @@ public class Praktikum_3_2 extends AppCompatActivity {
                 finish();
             }
         });
-        imgBtnEditProfile = findViewById(R.id.imgBtnEditProfile_pra_3_2);
+
         imgBtnEditProfile.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(Praktikum_3_2.this, Praktikum_3_2_EditProfile.class);
+                intent.putExtra("nama", getIntent().getStringExtra("nama"));
+                intent.putExtra("email", getIntent().getStringExtra("email"));
+                startActivity(intent);
+            }
+        });
+        imgBtnProduct.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(Praktikum_3_2.this, Latihan_3_1.class);
                 intent.putExtra("nama", getIntent().getStringExtra("nama"));
                 intent.putExtra("email", getIntent().getStringExtra("email"));
                 startActivity(intent);

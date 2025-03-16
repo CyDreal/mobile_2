@@ -17,6 +17,10 @@
         android:theme="@style/Theme.Main_mobile"
         tools:targetApi="31">
         <activity
+            android:name=".Latihan_3_1"
+            android:exported="true"
+            android:theme="@style/NoActionBar"/>
+        <activity
             android:name=".Praktikum_3_3_BottomNavigation"
             android:exported="true"
             android:label="@string/title_activity_praktikum33_bottom_navigation" />
@@ -32,7 +36,8 @@
             android:theme="@style/NoActionBar" />
         <activity
             android:name=".Praktikum_3_1"
-            android:exported="true" />
+            android:exported="true"
+            android:theme="@style/NoActionBar"/>
         <activity
             android:name=".Latihan_2_1"
             android:exported="true"

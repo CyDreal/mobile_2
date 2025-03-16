@@ -6,8 +6,6 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
-import android.widget.Button;
-import android.widget.ImageButton;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -17,10 +15,13 @@ import androidx.core.graphics.Insets;
 import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
 
+import com.google.android.material.appbar.MaterialToolbar;
+
 import org.json.JSONException;
 import org.json.JSONObject;
 
 import java.io.IOException;
+import java.util.Objects;
 
 import okhttp3.ResponseBody;
 import retrofit2.Call;
@@ -30,10 +31,13 @@ import retrofit2.Retrofit;
 import retrofit2.converter.gson.GsonConverterFactory;
 
 public class Praktikum_3_1 extends AppCompatActivity {
+
     public static final String URL = new Praktikum_3_1_ServerAPI().BASE_URL_LOGIN;
     ProgressDialog pd;
-    ImageButton btnLogin;
-    TextView etEmail, etPassword;
+    com.google.android.material.button.MaterialButton btnLogin;
+    com.google.android.material.textfield.TextInputEditText etEmail, etPassword;
+    TextView etRegister;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -46,8 +50,10 @@ public class Praktikum_3_1 extends AppCompatActivity {
         });
         etEmail = findViewById(R.id.etEmail_pra_3_1);
         etPassword = findViewById(R.id.etPassword2_pra_3_1);
+        etRegister = findViewById(R.id.tvRegister_pra_3_1);
 
         btnLogin = findViewById(R.id.imgbtnSubmit_pra_3_1);
+
         btnLogin.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -58,6 +64,15 @@ public class Praktikum_3_1 extends AppCompatActivity {
                 pd.setIndeterminate(true);
 
                 prosesLogin(etEmail.getText().toString(),etPassword.getText().toString());
+            }
+        });
+
+        etRegister.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(Praktikum_3_1.this, Praktikum_3_1_MainRegister.class);
+                startActivity(intent);
+                finish();
             }
         });
     }

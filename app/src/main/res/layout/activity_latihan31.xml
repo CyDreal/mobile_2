@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="?attr/colorSurface"
+    tools:context=".Latihan_3_1">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/conLyout2_lat_3_1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <com.google.android.material.appbar.MaterialToolbar
+            android:id="@+id/btnBack_lat_3_1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingVertical="16dp"
+            android:paddingHorizontal="16dp"
+            app:navigationIcon="@drawable/arrow_back_ios_new_24px">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical">
+
+                <com.google.android.material.imageview.ShapeableImageView
+                    android:id="@+id/imgView_lat_3_1"
+                    android:layout_width="56dp"
+                    android:layout_height="56dp"
+                    android:padding="8dp"
+                    android:scaleType="fitCenter"
+                    app:shapeAppearance="@style/ShapeAppearance.Material3.Corner.Full"
+                    app:strokeColor="?attr/colorPrimary"
+                    app:strokeWidth="2dp"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginStart="16dp">
+
+                    <TextView
+                        android:id="@+id/tv_lat_3_1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/title_appBar"
+                        android:textAppearance="@style/TextAppearance.Material3.TitleLarge"/>
+
+                    <TextView
+                        android:id="@+id/tv2_lat_3_1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/subTitle_appBar"
+                        android:textAppearance="@style/TextAppearance.Material3.BodyMedium"/>
+
+                    <TextView
+                        android:id="@+id/tvWelcome_lat_3_1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Welcome : "
+                        android:textAppearance="@style/TextAppearance.Material3.BodyLarge"/>
+                </LinearLayout>
+            </LinearLayout>
+        </com.google.android.material.appbar.MaterialToolbar>
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycleView_lat_3_1"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:background="@color/background_light"
+        android:clipToPadding="false"
+        android:padding="8dp"
+        android:scrollbars="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/conLyout2_lat_3_1" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

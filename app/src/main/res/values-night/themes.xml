@@ -2,6 +2,21 @@
     <!-- Base application theme. -->
     <style name="Base.Theme.Main_mobile" parent="Theme.Material3.DayNight">
         <!-- Customize your dark theme here. -->
-        <!-- <item name="colorPrimary">@color/my_dark_primary</item> -->
+        <item name="colorPrimary">@color/primary</item>
+        <item name="colorPrimaryDark">@color/primary_dark</item>
+        <item name="colorSecondary">@color/accent</item>
+        <item name="android:statusBarColor">?attr/colorPrimaryDark</item>
+        <item name="colorSurface">@color/background_light</item>
+        <item name="colorOnSurface">@color/text_primary</item>
+        <item name="android:windowLightStatusBar">true</item>
+    </style>
+    <style name="NoActionBar" parent="Theme.Material3.DayNight.NoActionBar" >
+        <item name="colorPrimary">@color/primary</item>
+        <item name="colorPrimaryDark">@color/primary_dark</item>
+        <item name="colorSecondary">@color/accent</item>
+        <item name="android:statusBarColor">?attr/colorPrimaryDark</item>
+        <item name="colorSurface">@color/background_light</item>
+        <item name="colorOnSurface">@color/text_primary</item>
+        <item name="android:windowLightStatusBar">true</item>
     </style>
 </resources>

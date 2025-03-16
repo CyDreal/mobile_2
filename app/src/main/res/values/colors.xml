@@ -7,4 +7,12 @@
     <color name="gray">#858D88</color>
     <color name="gray2">#626462</color>
     <color name="green">#599B5A</color>
+
+    <color name="primary">#2196F3</color>
+    <color name="primary_dark">#1976D2</color>
+    <color name="accent">#FFC107</color>
+    <color name="text_primary">#212121</color>
+    <color name="text_secondary">#757575</color>
+    <color name="background_light">#FAFAFA</color>
+    <color name="divider">#EEEEEE</color>
 </resources>
