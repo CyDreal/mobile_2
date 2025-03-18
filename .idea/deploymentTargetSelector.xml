@@ -11,13 +11,13 @@
       <SelectionState runConfigName="Praktikum_3_1">
         <option name="selectionMode" value="DROPDOWN" />
       </SelectionState>
-      <SelectionState runConfigName="Latihan_1_1">
-        <option name="selectionMode" value="DROPDOWN" />
-      </SelectionState>
       <SelectionState runConfigName="Praktikum_2_2">
         <option name="selectionMode" value="DROPDOWN" />
       </SelectionState>
       <SelectionState runConfigName="Praktikum_3_3_BottomNavigation">
+        <option name="selectionMode" value="DROPDOWN" />
+      </SelectionState>
+      <SelectionState runConfigName="Latihan_3_1">
         <option name="selectionMode" value="DROPDOWN" />
       </SelectionState>
     </selectionStates>

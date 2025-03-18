@@ -40,12 +40,12 @@ Repositori ini merupakan kumpulan project Android Studio yang dibuat selama perk
 | *Latihan 1.1*   | Aplikasi list mahasiswa dengan pengambilan record secara static                                          | ✔️     |
 | *Latihan 2.1*   | Aplikasi list product dengan pengambilan record menggunakan API static                                   | ✔️     |
 | *Latihan 3.1*   | Aplikasi list product dengan akses setelah melakukan login akun user                                     | ✔️     |
-| *Latihan 3.2*   | Lanjutan dari *Praktikum 3.3* menampilkan list product pada bottom navigation                            | 🔧     | 
+| *Latihan 3.2*   | Lanjutan dari *Praktikum 3.3* menampilkan list product pada bottom navigation                            | ✔️     | 
 | *Praktikum 1.1* | Menampilkan gambar melalui url menggunakan library Glide                                                 | ✔️     |
 | *Praktikum 2.2* | Aplikasi login form yang terintegrasi API static                                                         | ✔️     |
 | *Praktikum 3.1* | Aplikasi login dan register form yang terintegrasi API static dengan record password yang ter *enkripsi* | ✔️     |
-| *Praktikum 3.2* | Aplikasi pilihan menu dan edit profile dengan integrasi API static                                       | 🔧     |
-| *Praktikum 3.3* | Aplikasi bottom navigation                                                                               | 🔧     |
+| *Praktikum 3.2* | Aplikasi pilihan menu dan edit profile dengan integrasi API static                                       | ✔️     |
+| *Praktikum 3.3* | Aplikasi bottom navigation                                                                               | ✔️     |
 
 ## ⚒️ Teknologi yang Digunakan
 
