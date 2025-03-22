@@ -3,6 +3,7 @@ package com.example.main_mobile;
 import android.os.Bundle;
 
 import androidx.activity.EdgeToEdge;
+import androidx.activity.OnBackPressedCallback;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.graphics.Insets;
 import androidx.core.view.ViewCompat;
@@ -25,11 +26,21 @@ public class Latihan_1_1 extends AppCompatActivity {
         });
         recyclerView = findViewById(R.id.recycleView_lat_1_1);
         initRecyclerView();
+
+        // Add back press callback
+        getOnBackPressedDispatcher().addCallback(this, new OnBackPressedCallback(true) {
+            @Override
+            public void handleOnBackPressed() {
+                finish();
+            }
+        });
     }
+
     void initRecyclerView(){
         LinearLayoutManager linearLayoutManager = new LinearLayoutManager(this);
         adapter = new Latihan_1_1_Adapter(Latihan_1_1_Repository.getRepo().getModelsList());
         recyclerView.setLayoutManager(linearLayoutManager);
         recyclerView.setAdapter(adapter);
     }
+
 }

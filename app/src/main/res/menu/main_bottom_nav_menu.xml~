@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/navPraktikum"
+        android:icon="@drawable/assignment_24px"
+        android:title="Praktikum" />
+    <item
+        android:id="@+id/navHome"
+        android:icon="@drawable/home_app_logo_24px"
+        android:title="Home" />
+    <item
+        android:id="@+id/navLatihan"
+        android:icon="ass"
+        android:title="Latihan" />
+</menu>

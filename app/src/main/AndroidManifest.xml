@@ -59,7 +59,8 @@
             android:label="Glide" />
         <activity
             android:name=".MainActivity"
-            android:exported="true">
+            android:exported="true"
+            android:theme="@style/Theme.MainMobile">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

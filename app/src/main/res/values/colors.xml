@@ -15,4 +15,20 @@
     <color name="text_secondary">#757575</color>
     <color name="background_light">#FAFAFA</color>
     <color name="divider">#EEEEEE</color>
+
+    <!-- Material 3 color scheme -->
+    <color name="md_theme_primary">#006C4C</color>
+    <color name="md_theme_onPrimary">#FFFFFF</color>
+    <color name="md_theme_primaryContainer">#83F8C7</color>
+    <color name="md_theme_onPrimaryContainer">#002114</color>
+    <color name="md_theme_secondary">#4D6356</color>
+    <color name="md_theme_onSecondary">#FFFFFF</color>
+    <color name="md_theme_secondaryContainer">#CFE9D9</color>
+    <color name="md_theme_onSecondaryContainer">#0A1F15</color>
+    <color name="md_theme_surface">#FBFDF9</color>
+    <color name="md_theme_onSurface">#191C1A</color>
+    <color name="md_theme_surfaceVariant">#DCE5DD</color>
+    <color name="md_theme_onSurfaceVariant">#404943</color>
+    <color name="md_theme_outline">#707973</color>
+    <color name="md_theme_background">#FBFDF9</color>
 </resources>
