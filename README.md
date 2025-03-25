@@ -46,6 +46,7 @@ Repositori ini merupakan kumpulan project Android Studio yang dibuat selama perk
 | *Praktikum 3.1* | Aplikasi login dan register form yang terintegrasi API static dengan record password yang ter *enkripsi* | ✔️     |
 | *Praktikum 3.2* | Aplikasi pilihan menu dan edit profile dengan integrasi API static                                       | ✔️     |
 | *Praktikum 3.3* | Aplikasi bottom navigation                                                                               | ✔️     |
+| *Praktikum 4.1* | Aplikasi Shared Preference (Menurut pemahaman awal seperti cache)                                        | ✔️     |
 
 ## ⚒️ Teknologi yang Digunakan
 
