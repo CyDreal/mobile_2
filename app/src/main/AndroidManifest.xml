@@ -17,6 +17,12 @@
         android:theme="@style/Theme.Main_mobile"
         tools:targetApi="31">
         <activity
+            android:name=".Praktikum_4_2_MainDisplay"
+            android:exported="false" />
+        <activity
+            android:name=".Praktikum_4_2"
+            android:exported="false" />
+        <activity
             android:name=".Praktikum_4_1_home"
             android:exported="false" />
         <activity

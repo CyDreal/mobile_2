@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:orientation="vertical"
+    android:layout_margin="15dp"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Praktikum_4_2">
+
+    <TextView
+        android:id="@+id/tv_pra_4_2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Product"/>
+
+    <EditText
+        android:id="@+id/etProduct_pra_4_2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:minHeight="48dp"
+        tools:ignore="SpeakableTextPresentCheck"/>
+
+    <TextView
+        android:id="@+id/tv2_pra_4_2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Price"/>
+
+    <EditText
+        android:id="@+id/etPrice_pra_4_2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="48dp"
+        tools:ignore="SpeakableTextPresentCheck, TouchTargetSizeCheck"/>
+
+    <Button
+        android:id="@+id/btnSave_pra_4_2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Save"/>
+
+    <Button
+        android:id="@+id/btnDisplay_pra_4_2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Display Data"/>
+
+</LinearLayout>

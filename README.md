@@ -47,6 +47,7 @@ Repositori ini merupakan kumpulan project Android Studio yang dibuat selama perk
 | *Praktikum 3.2* | Aplikasi pilihan menu dan edit profile dengan integrasi API static                                       | ✔️     |
 | *Praktikum 3.3* | Aplikasi bottom navigation                                                                               | ✔️     |
 | *Praktikum 4.1* | Aplikasi Shared Preference (Menurut pemahaman awal seperti cache)                                        | ✔️     |
+| *Praktikum 4.2* | Aplikasi Shared Preference dan data disimpan dalam format json                                           | ✔️     |
 
 ## ⚒️ Teknologi yang Digunakan
 

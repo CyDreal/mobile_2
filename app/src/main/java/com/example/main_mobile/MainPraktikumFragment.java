@@ -58,6 +58,11 @@ public class MainPraktikumFragment extends Fragment {
                 "Aplikasi bottom navigation",
                 Praktikum_4_1.class
         ));
+        cardItems.add(new MainCardItem(
+                "Praktikum 4.2",
+                "Aplikasi...",
+                Praktikum_4_2.class
+        ));
         // Add more cards as needed
 
         adapter = new MainCardAdapter(getContext(), cardItems);
