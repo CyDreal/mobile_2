@@ -25,7 +25,7 @@ import retrofit2.Retrofit;
 import retrofit2.converter.gson.GsonConverterFactory;
 
 public class Latihan_2_1 extends AppCompatActivity {
-    public static final String URL="https://hagfish-more-uniquely.ngrok-free.app/mobile_2_API/";
+    public static final String URL="https://ipmobile.vannz.my.id/";
     private List<Latihan_2_1_DataProducts> results;
     private Latihan_2_1_Adapter adapter;
     RecyclerView recyclerView;

@@ -19,7 +19,7 @@ import retrofit2.converter.gson.GsonConverterFactory;
 
 public class ProductViewModel extends ViewModel {
 
-    public static final String URL="https://hagfish-more-uniquely.ngrok-free.app/mobile_2_API/";
+    public static final String URL="https://ipmobile.vannz.my.id/";
 
     private MutableLiveData<List<Latihan_2_1_DataProducts>> products;
 
