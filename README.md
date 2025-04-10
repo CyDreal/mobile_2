@@ -40,7 +40,12 @@ Repositori ini merupakan kumpulan project Android Studio yang dibuat selama perk
 | *Latihan 1.1*   | Aplikasi list mahasiswa dengan pengambilan record secara static                                          | ✔️     |
 | *Latihan 2.1*   | Aplikasi list product dengan pengambilan record menggunakan API static                                   | ✔️     |
 | *Latihan 3.1*   | Aplikasi list product dengan akses setelah melakukan login akun user                                     | ✔️     |
-| *Latihan 3.2*   | Lanjutan dari *Praktikum 3.3* menampilkan list product pada bottom navigation                            | ✔️     | 
+| *Latihan 3.2*   | Lanjutan dari *Praktikum 3.3* menampilkan list product pada bottom navigation                            | ✔️     |
+| *Latihan 4.1*   | Aplikasi halaman login dengan memanfaatkan Restfull API dan Shared Preference                            | 🔧     |
+| *Latihan 4.2*   | Menambahkan tombol delete pada daftar product                                                            | ✔️     |
+| *Latihan 4.3*   | Aplikasi halaman product dan order product menggunakan restfull API dan Shared Preference                | ✔️     |
+| *Latihan 5.1*   | Aplikasi daftar mahasiswa menggunakan recyclerView dengan fitur Search View                              | 🔧     |
+| *Latihan 5.2*   | Menambahkan Search View pada *Latihan 4.3*                                                               | 🔧     |
 | *Praktikum 1.1* | Menampilkan gambar melalui url menggunakan library Glide                                                 | ✔️     |
 | *Praktikum 2.2* | Aplikasi login form yang terintegrasi API static                                                         | ✔️     |
 | *Praktikum 3.1* | Aplikasi login dan register form yang terintegrasi API static dengan record password yang ter *enkripsi* | ✔️     |
@@ -48,6 +53,8 @@ Repositori ini merupakan kumpulan project Android Studio yang dibuat selama perk
 | *Praktikum 3.3* | Aplikasi bottom navigation                                                                               | ✔️     |
 | *Praktikum 4.1* | Aplikasi Shared Preference (Menurut pemahaman awal seperti cache)                                        | ✔️     |
 | *Praktikum 4.2* | Aplikasi Shared Preference dan data disimpan dalam format json                                           | ✔️     |
+| *Praktikum 5.1* | Aplikasi penggunaan Search View guna pencarian pada suatu daftar dalam List View                         | 🔧     |
+| *Praktikum 5.2* | Aplikasi Search View guna pencarian pada suatu daftar dalam recyclerView                                 | 🔧     |
 
 ## ⚒️ Teknologi yang Digunakan
 

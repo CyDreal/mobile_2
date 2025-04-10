@@ -15,6 +15,7 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import com.example.main_mobile.Latihan_2_1_Adapter;
 import com.example.main_mobile.Latihan_2_1_DataProducts;
+import com.example.main_mobile.adapter.Latihan_4_3_Adapter;
 import com.example.main_mobile.databinding.FragmentProductBinding;
 
 import java.util.ArrayList;
@@ -24,7 +25,7 @@ public class ProductFragment extends Fragment {
 
     private FragmentProductBinding binding;
     private ProductViewModel productViewModel;
-    private Latihan_2_1_Adapter adapter;
+    private Latihan_4_3_Adapter adapter;
     private List<Latihan_2_1_DataProducts> productList = new ArrayList<>();
 
     public View onCreateView(@NonNull LayoutInflater inflater,
@@ -46,7 +47,7 @@ public class ProductFragment extends Fragment {
 
     private void setupRecyclerView() {
         RecyclerView recyclerView = binding.rVProductFragPra33;
-        adapter = new Latihan_2_1_Adapter(requireContext(), productList);
+        adapter = new Latihan_4_3_Adapter(requireContext(), productList);
 
         recyclerView.setLayoutManager(new GridLayoutManager(getContext(), 2));
         recyclerView.addItemDecoration(new RecyclerView.ItemDecoration() {
