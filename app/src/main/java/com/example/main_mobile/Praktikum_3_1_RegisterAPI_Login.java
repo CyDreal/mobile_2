@@ -9,5 +9,8 @@ import retrofit2.http.POST;
 public interface Praktikum_3_1_RegisterAPI_Login {
     @FormUrlEncoded
     @POST("get_login_31.php")
-    Call<ResponseBody> login(@Field("email") String email, @Field("password") String password);
+    Call<ResponseBody> login(
+            @Field("email") String email,
+            @Field("password") String password
+    );
 }

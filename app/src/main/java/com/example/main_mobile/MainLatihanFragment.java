@@ -47,6 +47,21 @@ public class MainLatihanFragment extends Fragment {
                 "Lanjutan dari Praktikum 3.3 menampilkan list product pada bottom navigation",
                 Praktikum_3_3_BottomNavigation.class
         ));
+        cardItems.add(new MainCardItem(
+                "Latihan 4.1",
+                "Aplikasi halaman login dengan memanfaatkan Restfull API dan Shared Preference",
+                Latihan_4_1.class
+        ));
+        cardItems.add(new MainCardItem(
+                "Latihan 4.2",
+                "Lanjutan dari Praktikum 3.3 menambahkan tombol delete pada daftar product",
+                Praktikum_3_3_BottomNavigation.class
+        ));
+        cardItems.add(new MainCardItem(
+                "Latihan 4.3",
+                "Lanjutan dari Praktikum 3.3 yaitu aplikasi halaman product dan order product menggunakan restfull API dan Shared Preference",
+                Praktikum_3_3_BottomNavigation.class
+        ));
         // Add more cards as needed
 
         adapter = new MainCardAdapter(getContext(), cardItems);

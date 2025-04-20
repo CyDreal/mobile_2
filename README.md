@@ -53,7 +53,7 @@ Repositori ini merupakan kumpulan project Android Studio yang dibuat selama perk
 | *Praktikum 3.3* | Aplikasi bottom navigation                                                                               | ✔️     |
 | *Praktikum 4.1* | Aplikasi Shared Preference (Menurut pemahaman awal seperti cache)                                        | ✔️     |
 | *Praktikum 4.2* | Aplikasi Shared Preference dan data disimpan dalam format json                                           | ✔️     |
-| *Praktikum 5.1* | Aplikasi penggunaan Search View guna pencarian pada suatu daftar dalam List View                         | 🔧     |
+| *Praktikum 5.1* | Aplikasi penggunaan Search View guna pencarian pada suatu daftar dalam List View                         | ✔️     |
 | *Praktikum 5.2* | Aplikasi Search View guna pencarian pada suatu daftar dalam recyclerView                                 | 🔧     |
 
 ## ⚒️ Teknologi yang Digunakan

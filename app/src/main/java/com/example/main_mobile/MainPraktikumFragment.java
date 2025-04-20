@@ -55,13 +55,23 @@ public class MainPraktikumFragment extends Fragment {
         ));
         cardItems.add(new MainCardItem(
                 "Praktikum 4.1",
-                "Aplikasi bottom navigation",
+                "Aplikasi Shared Preference (Menurut pemahaman awal seperti cache)",
                 Praktikum_4_1.class
         ));
         cardItems.add(new MainCardItem(
                 "Praktikum 4.2",
-                "Aplikasi...",
+                "Aplikasi Shared Preference dan data disimpan dalam format json",
                 Praktikum_4_2.class
+        ));
+        cardItems.add(new MainCardItem(
+                "Praktikum 5.1",
+                "Aplikasi Search View untuk pencarian pada suatu daftar dalam List View",
+                Praktikum_5_1.class
+        ));
+        cardItems.add(new MainCardItem(
+                "Praktikum 5.2",
+                "Aplikasi Search View untuk pencarian pada suatu daftar dalam Recycler View",
+                Praktikum_5_2.class
         ));
         // Add more cards as needed
 

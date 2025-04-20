@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Latihan_4_1_MainHome">
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="106dp"
+        android:scaleType="fitXY"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:srcCompat="@drawable/academic_banner"
+        tools:ignore="ContentDescription" />
+    <TextView
+        android:id="@+id/tvWelcome_lat_4_1_main_home"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TextView"
+        android:textSize="20sp"
+        android:textStyle="bold|italic"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        tools:ignore="HardcodedText" />
+    <TextView
+        android:id="@+id/tv2_lat_4_1_main_home"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Ini adalah halaman depan, silahkan tekan tombol logout untuk kembali ke halaman login"
+        android:textSize="20sp"
+        android:textStyle="bold|italic"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        tools:ignore="HardcodedText" />
+    <Button
+        android:id="@+id/btnLogout_lat_4_1_main_home"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="80dp"
+        android:layout_marginStart="280dp"
+        android:backgroundTint="@color/yellow"
+        android:text="Logout"
+        android:textColor="@color/blue"
+        tools:ignore="HardcodedText" />
+</LinearLayout>
