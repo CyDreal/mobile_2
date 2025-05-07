@@ -55,4 +55,7 @@ dependencies {
     // glide
     implementation("com.github.bumptech.glide:glide:4.14.2")
     annotationProcessor("com.github.bumptech.glide:compiler:4.12.0")
+
+    // image slider
+    implementation("com.github.denzcoskun:ImageSlideshow:0.1.2")
 }

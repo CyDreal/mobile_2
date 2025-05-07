@@ -73,6 +73,11 @@ public class MainPraktikumFragment extends Fragment {
                 "Aplikasi Search View untuk pencarian pada suatu daftar dalam Recycler View",
                 Praktikum_5_2.class
         ));
+        cardItems.add(new MainCardItem(
+                "Praktikum 6.2",
+                "Aplikasi Image Slider",
+                Praktikum_6_2.class
+        ));
         // Add more cards as needed
 
         adapter = new MainCardAdapter(getContext(), cardItems);

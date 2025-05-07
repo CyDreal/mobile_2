@@ -17,6 +17,9 @@
         android:theme="@style/Theme.Main_mobile"
         tools:targetApi="31">
         <activity
+            android:name=".Praktikum_6_2"
+            android:exported="false" />
+        <activity
             android:name=".Praktikum_5_2"
             android:exported="false" />
         <activity
