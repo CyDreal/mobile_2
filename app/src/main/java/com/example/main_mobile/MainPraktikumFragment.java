@@ -74,8 +74,13 @@ public class MainPraktikumFragment extends Fragment {
                 Praktikum_5_2.class
         ));
         cardItems.add(new MainCardItem(
-                "Praktikum 6.2",
+                "Praktikum 6.1",
                 "Aplikasi Image Slider",
+                Praktikum_6_1.class
+        ));
+        cardItems.add(new MainCardItem(
+                "Praktikum 6.2",
+                "Aplikasi Location-Base Services",
                 Praktikum_6_2.class
         ));
         // Add more cards as needed

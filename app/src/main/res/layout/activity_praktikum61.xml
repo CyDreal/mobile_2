@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Praktikum_6_1">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        app:cardElevation="20dp"
+        app:cardCornerRadius="20dp">
+        <com.denzcoskun.imageslider.ImageSlider
+            android:id="@+id/imageSlider_pra_6_1"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            app:iss_period="1000"
+            app:iss_delay="1000"
+            app:iss_auto_cycle="true"
+            app:iss_corner_radius="20"
+            app:iss_title_background="@color/blue"/>
+    </androidx.cardview.widget.CardView>
+</RelativeLayout>
